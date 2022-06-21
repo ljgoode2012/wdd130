@@ -236,6 +236,7 @@ ul {
     padding: 30px;
     width: 20em; height: 20em;
     grid-column: 2/3;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 #grand-canyon-3-night{
     grid-column: 2/3;
@@ -258,21 +259,25 @@ ul {
     width: 25em; height: 25em;
     grid-column: 1/2;
     grid-row: 1/2;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 .grand-canyon-2 {
     width: 25em; height: 25em;
     grid-column: 1/2;
     grid-row: 2/3;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 .salmon-river {
     width: 25em; height: 25em;
     grid-column: 1/2;
     grid-row: 3/4;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 .desolation {
     width: 25em; height: 25em;
     grid-column: 1/2;
     grid-row: 4/5;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .background-strip-1, .background-strip-2, .background-strip-3, .background-strip-4 {
