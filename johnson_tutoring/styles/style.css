@@ -152,7 +152,7 @@ p {
     margin-top: -148px;
     margin-left: 50px;
 }
-button {
+#button {
     background-color: #80CED7;
     border-color: #80CED7;
     border-radius: 25px;
@@ -166,7 +166,7 @@ button {
     box-shadow: 5px 5px 10px #054451;
     margin-bottom: -20px;
 }
-button:hover {
+#button:hover {
     font-size: 2em;   
 }
 footer {
