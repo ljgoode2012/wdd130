@@ -4,111 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rates and Schedule | Johnson Tutoring</title>
 </head>
 <body>
-    <header>
-        <a href="index.html" id="logo_link">
-            <img class="logo" src="images/logo.png" alt="Johnson Tutoring logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="my-approach.html">My Approach</a>
-            <a href="rates-and-schedule.html">Rates and Schedule</a>
-        </nav>
-    </header>
-    <div id="hero">
-        <div id="hero-box"> 
-            <img id="hero-image" src="images/rsz_1dan-cristian-padure-h3kuhyuce9a-unsplash.jpg" alt="man calculating on blackboard">
-        </div>
-        <section id="hero-msg">
-            <h1 class="rates-title">Rates and Schedule</h1>
-        </section>
-    </div>
-    <div id="rates-box">
-        <h2>Rates</h2>
-        <section>
-            <h3>BY THE HOUR:</h3>
-            <p>$50 per hour</p>
-            <br><br>
-            <h3>BASIC MONTHLY:</h3>
-            <p>$180 monthly rate</p>
-            <p>1-hour sessions, once a week</p>
-            <br><br>
-            <h3>PREMIUM MONTHLY:</h3>
-            <p>$350 monthly rate</p>
-            <p>1-hour sessions, twice a week</p>
-        </section>
-    </div>
-    <div id="schedule-box">
-        <h2>Schedule</h2>
-        <section>
-            <p>The following hours reflect my general availability. Please contact me to schedule specific time slots.</p>
-            <br><br>
-            <h3>WEEKDAYS:</h3>
-            <p>Monday-Friday</p>
-            <p>9AM - 6PM</p>
-            <br><br>
-            <h3>WEEKENDS:</h3>
-            <p>Saturday</p>
-            <p>9AM - 4PM</p>
-        </section>
-    </div>
-    <div id="get-started-box">
-        <h2>Contact Me to Get Started!</h2>
-        <div id="get-started-form">
-            <form action="/my-handling-form-page" method="post">
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name">
-                    </li>
-                    <li>
-                        <label for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="user_email">
-                    </li>
-                    <li>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                    <li>
-                        <button type="submit">Send</button>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </div>
-    <footer>
-        <h3>Johnson Tutoring &copy; 2022 - Lindsey Goode</h3>
-        <h3><a href="site-plan.html">Site Plan</a></h3>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
+    <div id="child-2-content">
+        <header>
+            <a href="index.html" id="logo_link">
+                <img class="logo" src="images/logo.png" alt="Johnson Tutoring logo">
             </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="#" target="_blank">
-                <img src="images/2697658_apple_mail_email_envelope_inbox_icon.png" alt="email icon" width="64" height="64">
-            </a>
+            <nav class="topnav" id="myTopnav">
+                <button href="index.html">Home</button>
+                <button onclick="window.location.href='rates-and-schedule.html';">My Approach</button>
+                <button href="rates-and-schedule.html">Rates and Schedule</button>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <div id="rates-hero">
+            <div id="rates-hero-box"> 
+                <img id="rates-hero-image" src="images/rsz_1dan-cristian-padure-h3kuhyuce9a-unsplash.jpg" alt="man calculating on blackboard">
+            </div>
+            <section id="rates-title">
+                <h1 class="hero-msg">Rates and Schedule</h1>
+            </section>
         </div>
-    </footer>
-    <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
-        });
-    </script>
+        <main class="child-2-grid">
+            <div id="rates-box">
+                <h2>Rates</h2>
+                <section id="rates-body">
+                    <h3>BY THE HOUR:</h3>
+                    <p>$50 per hour</p>
+                    <br><br>
+                    <h3>BASIC MONTHLY:</h3>
+                    <p>$180 monthly rate</p>
+                    <p>1-hour sessions, once a week</p>
+                    <br><br>
+                    <h3>PREMIUM MONTHLY:</h3>
+                    <p>$350 monthly rate</p>
+                    <p>1-hour sessions, twice a week</p>
+                </section>
+            </div>
+            <div id="schedule-box">
+                <h2>Schedule</h2>
+                <section id="schedule-body">
+                    <p>The following hours reflect my general availability. Please contact me to schedule specific time slots.</p>
+                    <br><br>
+                    <h3>WEEKDAYS:</h3>
+                    <p>Monday-Friday</p>
+                    <p>9AM - 6PM</p>
+                    <br><br>
+                    <h3>WEEKENDS:</h3>
+                    <p>Saturday</p>
+                    <p>9AM - 4PM</p>
+                </section>
+            </div>
+            <div id="get-started-box">
+                <h2>Contact Me to Get Started!</h2>
+                <div id="get-started-form">
+                    <form action="/my-handling-form-page" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name">
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_email">
+                            </li>
+                            <li>
+                                <label for="msg">Message:</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li id="button-item">
+                                <button class=".button" type="submit">Send</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h3>Johnson Tutoring &copy; 2022 - Lindsey Goode</h3>
+            <h3><a href="site-plan.html">Site Plan</a></h3>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/2697658_apple_mail_email_envelope_inbox_icon.png" alt="email icon" width="64" height="64">
+                </a>
+            </div>
+        </footer>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function(e) {
+                // stop the form from doing the default action.
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+                // add a class to move everything down so our message doesn't cover it.
+                document.body.classList.toggle('moveDown');
+            });
+        </script>
+    </div>
 </body>
 </html>
